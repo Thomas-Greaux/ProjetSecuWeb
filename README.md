@@ -41,7 +41,11 @@ On met en place un livre d’or qui permet de laisser un message et de voir les 
 ## Path to Alice's secret
 
 -> sur la page de login, on peut injecter du code sql afin d'obtenir le mdp de Bob.
+
 -> on se connecte avec le login et mdp de Bob.
+
 -> on arrive sur une page ou on peut laisser un message que tout le monde peut voir. Sur cette page on execute une attaque XSS qui fait une requete GET vers le service de secret et on envoit le resultat de la requete à un serveur attaquant.
+
 -> Alice se connecte et le script XSS est executé.
+
 -> L'attaquant a le secret.
