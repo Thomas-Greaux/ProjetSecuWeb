@@ -6,8 +6,8 @@ if($_POST["username"] && $_POST["password"]){
 	$result = getResultLogin($_POST["username"], $_POST["password"]);
 	if ($result->num_rows > 0){
 		$row = $result->fetch_assoc();
-		setcookie('username', serialize($row["username"]), time()+3600);
-		setcookie('password', serialize($row["password"]), time()+3600);	
+		setcookie('username', serialize($_POST["username"]), time()+3600);
+		setcookie('password', serialize($_POST["password"]), time()+3600);	
 	}
 }
 else {

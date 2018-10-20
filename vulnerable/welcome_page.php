@@ -1,5 +1,5 @@
 <?php 
-include 'getResultLogin.php';
+include 'getResultLoginSecure.php';
 
 if($_COOKIE["username"] && $_COOKIE["password"]){
 		$result = getResultLogin(unserialize($_COOKIE["username"]), unserialize($_COOKIE["password"]));
