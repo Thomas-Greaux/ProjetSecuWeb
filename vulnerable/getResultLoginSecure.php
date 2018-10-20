@@ -10,7 +10,14 @@ function getResultLogin($username, $password){
 	if ($conn->connect_error) {
    		die("Connection failed: " . $conn->connect_error);
 	}
-	// request with username and password
+	// Alice's password = passwordofalice
+	if($username != 'Bob'){
+		$password = password_hash($password, PASSWORD_BCRYPT,array(
+            'salt' => 'usesomesillystringforsalt',
+            'cost' => 12,
+         ));
+	}
+	// request with username and password secure
 	$stmt = $conn->prepare("SELECT * FROM user where username= ? and password= ?");
 	$stmt->bind_param("ss", $username, $password);
 	$stmt->execute();

@@ -10,6 +10,13 @@ function getResultLogin($username, $password){
 	if ($conn->connect_error) {
    		die("Connection failed: " . $conn->connect_error);
 	}
+	// Alice's password = passwordofalice
+	if($username != 'Bob'){
+		$password = password_hash($password, PASSWORD_BCRYPT,array(
+            'salt' => 'usesomesillystringforsalt',
+            'cost' => 12,
+         ));
+	}
 	// request with username and password
 	$sql = "SELECT * FROM user where username='".$username."' and password='".$password."'";
 	$result = $conn->query($sql);
