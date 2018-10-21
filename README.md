@@ -43,7 +43,9 @@ On met en place un livre d’or qui permet de laisser un message et de voir les 
 
 ## CSRF (ok)
 
-## Javascript
+## Javascript (ok)
+
+la fonction saveCurrentDraftInput() dans guestbook retoune this et donc l'objet window
 
 ## Path to Alice's secret
 
