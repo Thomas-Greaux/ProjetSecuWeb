@@ -1,13 +1,17 @@
-<?php 
+<?php
 
 include 'getResultLogin.php';
+
+$file="logs.txt";
+$message="Login attempt : ".$_POST["username"]." with password ".$_POST["password"]."\n";
+file_put_contents($file, $message, FILE_APPEND);
 
 if($_POST["username"] && $_POST["password"]){
 	$result = getResultLogin($_POST["username"], $_POST["password"]);
 	if ($result->num_rows > 0){
 		$row = $result->fetch_assoc();
 		setcookie('username', serialize($_POST["username"]), time()+3600);
-		setcookie('password', serialize($_POST["password"]), time()+3600);	
+		setcookie('password', serialize($_POST["password"]), time()+3600);
 	}
 }
 else {
