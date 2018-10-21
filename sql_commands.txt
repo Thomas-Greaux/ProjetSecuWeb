@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS user (username varchar(100) not null, password varchar(100) not null, primary key (username))ENGINE=INNODB;
+
+INSERT INTO user VALUES('Bob', 'itsbobpassword');
+INSERT INTO user VALUES('Alice', '$2y$12$usesomesillystringforewmfPFWABdonp/3/kb59aq0dOqKK/t4u');
+
+CREATE USER 'secu'@'127.0.0.1' IDENTIFIED BY 'secu';
+GRANT SELECT ON secudb.user TO 'secu'@'localhost';
