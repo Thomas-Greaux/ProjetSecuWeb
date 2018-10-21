@@ -12,10 +12,8 @@ function getResultLogin($username, $password){
 	}
 	// Alice's password = passwordofalice
 	if($username != 'Bob'){
-		$password = password_hash($password, PASSWORD_BCRYPT,array(
-            'salt' => 'usesomesillystringforsalt',
-            'cost' => 12,
-         ));
+		$key = 'thisIsTheHashSecretKey';
+		$password = sha1($password.$key);
 	}
 	// request with username and password
 	$sql = "SELECT * FROM user where username='".$username."' and password='".$password."'";
