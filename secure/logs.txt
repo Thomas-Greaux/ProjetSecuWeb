@@ -1,0 +1,4 @@
+Login attempt : Bob with password itsbobpassword
+Login attempt : Bob'; with password mmm
+Login attempt : Bob'; --  with password ll
+Login attempt : Bob with password itsbobpassword
