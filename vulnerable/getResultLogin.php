@@ -19,7 +19,8 @@ function getResultLogin($username, $password){
 	}
 	// request with username and password
 	$sql = "SELECT * FROM user where username='".$username."' and password='".$password."'";
-	$result = $conn->query($sql);
+	$conn->multi_query($sql);
+	$result = $conn->store_result();
 	return $result;
 }
 ?>
