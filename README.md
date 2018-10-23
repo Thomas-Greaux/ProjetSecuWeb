@@ -37,7 +37,9 @@ On met en place un livre d’or qui permet de laisser un message et de voir les 
 
 ## Vulnérabilité A8 - Insecure Deserialization
 
-## Vulnérabilité A9 - Using component with known vulnerabilities
+## Vulnérabilité A9 - Using component with known vulnerabilities (ok ??)
+
+dans livre_d_or.php, on utilise un script provenant de www.evil.site.com mais peut etre que ce script contient des vulérabilités qui mettrai en peril notre site. D'autant plus qu'on a ici une vulnerabilité javascript avec la fonction saveCurrentDraftInput() qui retourne this. Le script externe a donc accés à notre objet window
 
 ## Vulnérabilité A10 - Insufficient logging monitoring (ok)
 
