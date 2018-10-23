@@ -25,7 +25,7 @@ if($_COOKIE["username"] && $_COOKIE["password"]){
 		echo "<form action='livre_d_or.php'><input type='submit' value='Go to guest book' /></form>";
 		echo "<form action='vip_page.php'><input type='submit' value='Go to VIP page' /></form>";
 		if($row["username"] == 'Alice'){
-			echo "<div id='secret'><a href='alice_secret.html'>alice_secret.html</a></div>";
+			echo "<div id='secret'><a href='alice_secret.html'>alice_secret.php</a></div>";
 		} else {
 			echo "you don't have access to the secret service !";
 		}
