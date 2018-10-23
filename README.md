@@ -35,7 +35,9 @@ on peut dire qu'on a mal configurer l'utilisateur de la Base de Données MYSQL u
 
 On met en place un livre d’or qui permet de laisser un message et de voir les messages qui ont été ajouté.
 
-## Vulnérabilité A8 - Insecure Deserialization
+## Vulnérabilité A8 - Insecure Deserialization (ok ?)
+
+grâce à l'attaque csrf, on peut aussi recupérer les cookies d'Alice. Ces cookies sont serialisé de manière simpliste, et il est donc très facile de recuperer son mot de passe.
 
 ## Vulnérabilité A9 - Using component with known vulnerabilities (ok ??)
 
