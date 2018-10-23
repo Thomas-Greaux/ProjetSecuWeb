@@ -7,3 +7,18 @@ Login attempt : Alice with password passwordofalice
 Login attempt : Alice with password passwordofalice
 Login attempt : Bob with password itsbobpassword
 Login attempt : Alice with password passwordofalice
+Login attempt : Bob with password itsbobpassword
+Login attempt : Bob with password itsbobpassword
+Login attempt : Bob with password itsbobpassword
+Login attempt :  with password 
+Login attempt :  with password 
+Login attempt :  with password 
+Login attempt :  with password 
+Login attempt : Alice with password passwordoofalice
+Login attempt : Alice with password passwordofalice
+Login attempt :  with password 
+Login attempt : Bob with password itsbobpassword
+Login attempt : Alice with password passwordofalice
+Login attempt :  with password 
+Login attempt : Alice with password passwordofalice
+Login attempt : Alice with password passwordofalice

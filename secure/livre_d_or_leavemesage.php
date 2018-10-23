@@ -1,8 +1,8 @@
 <?php 
 include 'getResultLoginSecure.php';
 
-if($_COOKIE["username"] && $_COOKIE["password"]){
-        $result = getResultLogin(unserialize($_COOKIE["username"]), unserialize($_COOKIE["password"]));
+if($_COOKIE["username"] && $_COOKIE["token"]){
+        $result = verifyToken(unserialize($_COOKIE["username"]), unserialize($_COOKIE["token"]));
         if ($result->num_rows > 0){
         $row = $result->fetch_assoc();
         }
